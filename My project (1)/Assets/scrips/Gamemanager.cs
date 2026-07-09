@@ -5,6 +5,7 @@ public class GameManager : MonoBehaviour
 {
     // Stores the one (and only) instance of this script
     public static GameManager Instance {get; private set;}
+    public static bool isGameOver = false; // Stores whether the game is over or not
 
     private void Awake()
     {
@@ -19,15 +20,29 @@ public class GameManager : MonoBehaviour
             // Destroy this extra copy of this script
             Destroy(gameObject);
         }
-    } 
 
+        isGameOver = false; // Reset the game over state when the game starts
+    } 
     public void GameOver()
     {
-        // Trigger Lose state UI
-        // ...
+        // Set the game over state to true
+        isGameOver = true;
 
-        // Load the scene at build index 0
+        // Show the Game Over UI
+        UIManager.Instance.ShowGameOverUI(true);
+
+       
+    }
+
+    public void LoadMainMenu()
+    {
+        // Load the main menu scene
         SceneManager.LoadScene(0);
     }
 
+    public void LoadCurrentScene()
+    {
+        // Restarts the currently active scene
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
 }
