@@ -848,7 +848,7 @@ Transform:
   m_GameObject: {fileID: 186006056}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 97.5, y: -5.12, z: 37}
+  m_LocalPosition: {x: 104.125, y: 1.58, z: -8.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9864,13 +9864,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d76ad1986848149b2976d043053897d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::playercontrols
-  InputActions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  InputActions: {fileID: 0}
   groundLayer:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 0
   groundCheckDistance: 1
-  rb: {fileID: 1681397763}
-  moveSpeed: 10
+  rb: {fileID: 0}
+  moveSpeed: 5
   jumpForce: 5
 --- !u!1001 &1687633806
 PrefabInstance:
@@ -12516,7 +12516,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1852542546220409350, guid: 24f417e579996466da4f08d85f2bcc53, type: 3}
       propertyPath: m_Speed
-      value: 20
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1852542546220409350, guid: 24f417e579996466da4f08d85f2bcc53, type: 3}
+      propertyPath: m_Height
+      value: 0.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 1852542546220409350, guid: 24f417e579996466da4f08d85f2bcc53, type: 3}
+      propertyPath: m_AngularSpeed
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 1980305930756020821, guid: 24f417e579996466da4f08d85f2bcc53, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12940,8 +12948,8 @@ GameObject:
   - component: {fileID: 8328731451187470708}
   - component: {fileID: 6084765970746299838}
   - component: {fileID: 1798887200696885652}
-  - component: {fileID: 8328731451187470710}
   - component: {fileID: 8328731451187470709}
+  - component: {fileID: 8328731451187470711}
   m_Layer: 0
   m_Name: Player
   m_TagString: Respawn
@@ -13121,7 +13129,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &8328731451187470710
+--- !u!114 &8328731451187470711
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -13130,17 +13138,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 5724517238595679339}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d76ad1986848149b2976d043053897d2, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b490aa7d45254ae59309855c8b5dc80, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  InputActions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 8
-  groundCheckDistance: 1
-  rb: {fileID: 8328731451187470709}
-  moveSpeed: 22
-  jumpForce: 5
+  m_EditorClassIdentifier: Assembly-CSharp::Enemy
+  waypoints: []
+  agent: {fileID: 0}
+  currentWaypoint: 0
 --- !u!33 &9023157263808676252
 MeshFilter:
   m_ObjectHideFlags: 0
