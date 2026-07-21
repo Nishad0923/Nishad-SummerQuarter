@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     // Stores the input action sheet used for input
     [SerializeField] private InputActionAsset InputActions;
 
-    // ACTIONS
+    /// ACTIONS
     private InputAction moveAction;
     private InputAction jumpAction;
 
