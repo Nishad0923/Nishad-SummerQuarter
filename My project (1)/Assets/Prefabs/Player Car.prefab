@@ -677,9 +677,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 410f8f0a4b47a4563b86e23e340d83b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CarController
-  motorForce: 3000
-  brakeForce: 6000
-  maxSteerAngle: 30
+  motorForce: 2000
+  brakeForce: 8000
+  maxSteerAngle: 100
   frontLeftCollider: {fileID: 7770600815661153132}
   frontRightCollider: {fileID: 1176790623905566011}
   rearLeftCollider: {fileID: 6882734569191535894}
