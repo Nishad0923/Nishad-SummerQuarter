@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Gameovertrigger : MonoBehaviour
 {
-   
+   [SerializeField] private GameManager gameManager;
         
     void OnCollisionEnter(Collision collision)
     {
@@ -10,6 +10,7 @@ public class Gameovertrigger : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             // Call the GameOver method from the GameManager
+            Debug.Log("died"); 
             GameManager.Instance.GameOver();
         }
     }

@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
     } 
     public void GameOver()
     {
+        Debug.Log("Game Over!"); // Log a message to the console for debugging purpose
         if (isGameOver) return; // If the game is already over, don't do anything
         // Set the game over state to true
         isGameOver = true;
