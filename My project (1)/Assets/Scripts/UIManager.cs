@@ -8,6 +8,7 @@ public class UIManager : MonoBehaviour
     [ SerializeField] private TextMeshProUGUI timertext; // 
     [SerializeField] private GameObject gameOverUI; // Stores the Game Over UI object
 
+
     // Awake() called when this gameobject is enabled in the scene 
     private void Awake()
     {
