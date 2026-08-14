@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class FinishLine : MonoBehaviour
+public class finishline : MonoBehaviour
 {
     public GameObject winUI; // Assign a win screen panel in the Inspector
     public float restartDelay = 5f;
@@ -11,6 +11,7 @@ public class FinishLine : MonoBehaviour
     private void Awake()
     {
         raceFinished = false;
+        winUI.SetActive(false);
     }
 
     private void OnCollisionEnter(Collision other)
