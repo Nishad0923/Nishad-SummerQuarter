@@ -11120,11 +11120,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8875758405015052038, guid: d5d94a87bf91ec842aeb8faa43a7ec9a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 15.1
+      value: 14.55
       objectReference: {fileID: 0}
     - target: {fileID: 8875758405015052038, guid: d5d94a87bf91ec842aeb8faa43a7ec9a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 300.6
+      value: 300.95
       objectReference: {fileID: 0}
     - target: {fileID: 8875758405015052038, guid: d5d94a87bf91ec842aeb8faa43a7ec9a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -12040,8 +12040,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 5, y: 6.0529146, z: 16.010689}
-  m_Center: {x: 0, y: 0.6156129, z: -2.811214}
+  m_Size: {x: 5, y: 6.0529146, z: 17.809029}
+  m_Center: {x: 3.9699824e-15, y: 0.6156129, z: -8.5191965}
 --- !u!54 &1532093769
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12081,7 +12081,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc35477e602d6429b827d31d740cfe17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::finishline
-  winUI: {fileID: 1764962641}
+  winUI: {fileID: 1413808909}
   restartDelay: 5
 --- !u!1001 &1536623775
 PrefabInstance:
@@ -14410,7 +14410,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6892387803213909311, guid: 12a1974d2a1a7483e8e0e24bd5509592, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.85
+      value: 9.72
       objectReference: {fileID: 0}
     - target: {fileID: 6892387803213909311, guid: 12a1974d2a1a7483e8e0e24bd5509592, type: 3}
       propertyPath: m_LocalPosition.z
