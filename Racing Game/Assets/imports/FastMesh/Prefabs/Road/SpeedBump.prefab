@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 8875758405015052038}
   - component: {fileID: 5513211521340215459}
   - component: {fileID: 7738921263489606761}
-  - component: {fileID: 9176196138957945281}
   m_Layer: 0
   m_Name: SpeedBump
   m_TagString: Untagged
@@ -91,17 +90,3 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &9176196138957945281
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8099398005186905532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b08d1681e0a0460c87b44c3ede19cf9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FinishLine
-  winUI: {fileID: 6490448317428140202, guid: 67ca890e6f072489f86067dae9b4ca99, type: 3}
-  restartDelay: 5
