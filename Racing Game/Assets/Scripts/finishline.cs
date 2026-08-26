@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class finishline : MonoBehaviour
 {
     public GameObject winUI; // Assign a win screen panel in the Inspector
+    public GameObject loseUI; // Assign a lose screen panel in the Inspector
     public float restartDelay = 5f;
 
     private bool raceFinished = false;
@@ -12,13 +13,16 @@ public class finishline : MonoBehaviour
     {
         raceFinished = false;
         winUI.SetActive(false);
+        loseUI.SetActive(false);
     }
 
-    private void OnCollisionEnter(Collision other)
+    private void OnTriggerEnter(Collider other)
     {
         Debug.Log($"Finish Line Collided with {other.transform.name}");
         // Check if the object touching the finish line is the player
         CarControll player = other.gameObject.GetComponent<CarControll>();
+        // Check if the enemy collided with the finish line
+        Enemy enemy = other.gameObject.GetComponent<Enemy>();
 
         if (player != null && !raceFinished)
         {
@@ -37,6 +41,17 @@ public class finishline : MonoBehaviour
 
             // Restart scene after delay (remove if not needed)
             // Invoke("RestartRace", restartDelay);
+        }
+        else if (enemy != null && !raceFinished)
+        {
+            raceFinished = true;
+
+            Debug.Log("Race Finished!");
+            // Show lose screen
+            if (loseUI != null)
+            {
+                loseUI.SetActive(true);
+            }
         }
     }
 
